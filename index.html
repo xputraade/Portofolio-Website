@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Putra Ade Akbar | Portfolio</title>
+  <meta
+    name="description"
+    content="Website portofolio sederhana Putra Ade Akbar."
+  >
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet"
+  >
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#top">Putra Ade Akbar</a>
+    <nav class="site-nav" aria-label="Navigasi utama">
+      <a href="#projects">Projects</a>
+      <a href="#ringkas">Ringkas</a>
+      <a href="#kontak">Kontak</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <p class="eyebrow">Introduction</p>
+      <div class="intro-block">
+        <h1>Hi, saya Putra Ade Akbar.</h1>
+        <div class="intro-copy">
+          <p>
+            Saya fokus pada cloud infrastructure, DevOps, observability, dan backend systems.
+            Saya banyak mengerjakan deployment workload dengan Kubernetes, Helm, PostgreSQL,
+            Prometheus, Grafana, Elasticsearch, Terraform, serta berbagai kebutuhan monitoring
+            dan integrasi service di environment cloud.
+          </p>
+          <p>
+            Project yang saya kerjakan mencakup support ticketing system di Kubernetes,
+            monitoring dan alerting server, implementasi infrastruktur di Google Cloud Platform
+            dan AWS, sampai aplikasi mobile dan sistem keamanan berbasis IoT.
+          </p>
+          <p>
+            Saya tertarik membangun sistem yang rapi, mudah dipantau, dan siap dijalankan dengan baik.
+            Anda bisa melihat <a href="#projects">project yang saya kerjakan</a> di bawah, atau terhubung lewat
+            <a
+              href="https://www.linkedin.com/in/putra-ade-akbar/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              LinkedIn
+            </a>
+            dan
+            <a
+              href="https://github.com/xputraade"
+              target="_blank"
+              rel="noreferrer"
+            >
+              GitHub
+            </a>.
+          </p>
+        </div>
+        <div class="actions">
+          <a
+            class="button button-primary"
+            href="https://www.linkedin.com/in/putra-ade-akbar/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            LinkedIn
+          </a>
+          <a
+            class="button button-secondary"
+            href="https://github.com/xputraade"
+            target="_blank"
+            rel="noreferrer"
+          >
+            GitHub
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="projects">
+      <p class="eyebrow">Projects</p>
+      <div class="projects-list">
+        <article class="project-item">
+          <div class="project-head">
+            <p class="project-date">Apr 2026 - Apr 2026</p>
+            <h3>Support Ticketing System on Kubernetes with Helm, PostgreSQL, Elasticsearch, Kibana, Fluent Bit, and Logstash JDBC</h3>
+          </div>
+          <p class="project-copy">
+            Membangun dan mendeploy aplikasi support ticketing di Kubernetes menggunakan Node.js dan PostgreSQL,
+            lalu mengintegrasikan Elasticsearch, Kibana, Fluent Bit, dan Logstash JDBC untuk pencarian, visualisasi,
+            dan log forwarding. Helm digunakan untuk mengelola deployment service di environment Kubernetes.
+          </p>
+          <p class="project-stack">
+            Node.js, Express, PostgreSQL, Kubernetes, Helm, Elasticsearch, Kibana, Fluent Bit, Logstash JDBC, Docker, kind
+          </p>
+        </article>
+
+        <article class="project-item">
+          <div class="project-head">
+            <p class="project-date">Dec 2025 - Dec 2025</p>
+            <h3>Implementasi Monitoring &amp; Alerting Server Menggunakan Prometheus dan Grafana (Node Exporter)</h3>
+          </div>
+          <p class="project-copy">
+            Implementasi end-to-end sistem monitoring dan alerting pada server AWS EC2 Ubuntu menggunakan Prometheus,
+            Node Exporter, dan Grafana. Mencakup instalasi manual, konfigurasi service dengan systemd, pembuatan
+            alert rules PromQL, serta pengujian alert menggunakan CPU stress testing.
+          </p>
+          <p class="project-stack">
+            Prometheus, Grafana, Node Exporter, AWS EC2, Ubuntu, systemd, PromQL
+          </p>
+        </article>
+
+        <article class="project-item">
+          <div class="project-head">
+            <p class="project-date">Feb 2024 - Aug 2025</p>
+            <h3>Mobile-Based Integrated Security System for Secure Room Using Smart Lock, Alarm, and Camera</h3>
+          </div>
+          <p class="project-copy">
+            Tugas akhir yang berfokus pada sistem keamanan ruangan berbasis mobile dengan smart lock, alarm,
+            kamera, dan face recognition. Sistem memakai ESP32-CAM dan ESP8266, serta berjalan di jaringan lokal
+            untuk menjaga latensi rendah dan kontrol perangkat secara langsung.
+          </p>
+          <p class="project-stack">
+            ESP32-CAM, ESP8266, Mobile App, LBPH Face Recognition, Smart Lock, Alarm System, Local IoT Architecture
+          </p>
+        </article>
+
+        <article class="project-item">
+          <div class="project-head">
+            <p class="project-date">Mar 2024 - Jun 2024</p>
+            <h3>Cloud Infrastructure Deployment &amp; Security Implementation using Google Cloud Platform</h3>
+          </div>
+          <p class="project-copy">
+            Project cloud computing yang mencakup deployment VM Ubuntu di Google Compute Engine, setup Apache Web Server,
+            MySQL, hardening dengan Fail2ban dan UFW Firewall, konfigurasi Google Cloud Storage, pengujian CRUD,
+            serta monitoring dan alerting menggunakan Google Cloud Monitoring.
+          </p>
+          <p class="project-stack">
+            Google Cloud Platform, Compute Engine, Ubuntu, Apache, MySQL, Fail2ban, UFW Firewall, Firestore, Google Cloud Monitoring
+          </p>
+        </article>
+
+        <article class="project-item">
+          <div class="project-head">
+            <p class="project-date">Apr 2024 - Jun 2024</p>
+            <h3>Mobile Quiz Application with Authentication, QR Code &amp; Role-Based Access</h3>
+          </div>
+          <p class="project-copy">
+            Pengembangan aplikasi mobile untuk kuis dosen dan mahasiswa dengan role-based access, email login,
+            Google Sign-In, biometric authentication, QR code, serta integrasi Supabase Auth dan Google Cloud Platform
+            untuk pengelolaan data dan autentikasi.
+          </p>
+          <p class="project-stack">
+            Mobile Application Development, Supabase Auth, Google Cloud Platform, QR Code, Authentication, Authorization, Biometrics
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" id="ringkas">
+      <p class="eyebrow">Ringkas</p>
+      <div class="simple-list">
+        <article class="list-item">
+          <h3>Nama</h3>
+          <p>Putra Ade Akbar</p>
+        </article>
+        <article class="list-item">
+          <h3>Fungsi website</h3>
+          <p>Profil singkat, identitas profesional, dan titik kontak.</p>
+        </article>
+        <article class="list-item">
+          <h3>Fokus project</h3>
+          <p>DevOps, cloud infrastructure, observability, backend systems, mobile app, dan IoT security.</p>
+        </article>
+        <article class="list-item">
+          <h3>Cloud &amp; IaC</h3>
+          <p>Google Cloud Platform, AWS, Terraform, Kubernetes, dan Helm.</p>
+        </article>
+        <article class="list-item">
+          <h3>Kontak utama</h3>
+          <p>
+            <a
+              href="https://www.linkedin.com/in/putra-ade-akbar/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              LinkedIn
+            </a>
+          </p>
+        </article>
+        <article class="list-item">
+          <h3>GitHub</h3>
+          <p>
+            <a
+              href="https://github.com/xputraade"
+              target="_blank"
+              rel="noreferrer"
+            >
+              github.com/xputraade
+            </a>
+          </p>
+        </article>
+        <article class="list-item">
+          <h3>Instagram</h3>
+          <p>
+            <a
+              href="https://www.instagram.com/xnvput/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              @xnvput
+            </a>
+          </p>
+        </article>
+        <article class="list-item">
+          <h3>Email</h3>
+          <p>
+            <a href="mailto:akbar.ade8e@gmail.com">
+              akbar.ade8e@gmail.com
+            </a>
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section contact" id="kontak">
+      <p class="eyebrow">Kontak</p>
+      <h2>Terhubung lewat LinkedIn, GitHub, Instagram, atau email.</h2>
+      <p class="copy contact-copy">
+        Anda bisa menghubungi saya lewat LinkedIn, GitHub, Instagram, atau langsung melalui email.
+      </p>
+      <div class="actions">
+        <a
+          class="button button-primary"
+          href="https://www.linkedin.com/in/putra-ade-akbar/"
+          target="_blank"
+          rel="noreferrer"
+        >
+          LinkedIn
+        </a>
+        <a
+          class="button button-secondary"
+          href="https://github.com/xputraade"
+          target="_blank"
+          rel="noreferrer"
+          >
+          GitHub
+        </a>
+        <a
+          class="button button-secondary"
+          href="https://www.instagram.com/xnvput/"
+          target="_blank"
+          rel="noreferrer"
+        >
+          Instagram
+        </a>
+        <a
+          class="button button-secondary"
+          href="mailto:akbar.ade8e@gmail.com"
+        >
+          Email
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; <span id="year"></span> Putra Ade Akbar</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

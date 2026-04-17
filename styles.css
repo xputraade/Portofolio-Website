@@ -1,0 +1,306 @@
+:root {
+  --bg: #0d0d0d;
+  --surface: #141414;
+  --text: #f3f3ef;
+  --muted: #a2a29b;
+  --line: #2a2a2a;
+  --accent: #f3f3ef;
+  --max-width: 960px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: "Manrope", "Segoe UI", sans-serif;
+  color: var(--text);
+  background: var(--bg);
+  line-height: 1.65;
+}
+
+a {
+  color: inherit;
+}
+
+.site-header,
+main,
+.site-footer {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+.site-header {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.brand {
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 0.98rem;
+  letter-spacing: 0.01em;
+}
+
+.site-nav {
+  display: flex;
+  gap: 1.25rem;
+}
+
+.site-nav a {
+  text-decoration: none;
+  color: var(--muted);
+  font-size: 0.92rem;
+}
+
+.site-nav a:hover {
+  color: var(--text);
+}
+
+main {
+  padding-top: 2rem;
+  padding-bottom: 4rem;
+}
+
+.hero,
+.section,
+.site-footer {
+  border-top: 1px solid var(--line);
+}
+
+.hero,
+.section {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.hero-layout,
+.section-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.2fr) minmax(260px, 0.8fr);
+  gap: 2rem;
+  align-items: start;
+}
+
+.eyebrow {
+  margin: 0 0 1rem;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+h1,
+h2,
+h3 {
+  margin: 0;
+  line-height: 1.1;
+}
+
+h1,
+h2 {
+  font-weight: 700;
+  letter-spacing: -0.03em;
+}
+
+h1 {
+  font-size: clamp(2rem, 4.8vw, 2.9rem);
+  margin-bottom: 1.25rem;
+}
+
+h2 {
+  font-size: clamp(1.45rem, 3vw, 2rem);
+}
+
+h3 {
+  font-size: 0.96rem;
+  font-weight: 700;
+}
+
+.lead,
+.copy,
+.note-copy,
+.list-item p,
+.contact-copy {
+  color: var(--muted);
+}
+
+.intro-block {
+  max-width: 860px;
+}
+
+.intro-copy {
+  display: grid;
+  gap: 1.5rem;
+  max-width: 800px;
+}
+
+.intro-copy p {
+  margin: 0;
+  color: #d2d2cc;
+  font-size: clamp(0.98rem, 1.35vw, 1.08rem);
+  line-height: 1.9;
+}
+
+.intro-copy a {
+  color: var(--text);
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.18em;
+}
+
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 1.75rem;
+}
+
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 2.6rem;
+  padding: 0.68rem 1rem;
+  border: 1px solid var(--line);
+  text-decoration: none;
+  font-size: 0.92rem;
+  font-weight: 600;
+}
+
+.button-primary {
+  background: var(--text);
+  border-color: var(--text);
+  color: #0d0d0d;
+}
+
+.button-secondary {
+  background: var(--surface);
+  color: var(--text);
+}
+
+.button-ghost {
+  background: transparent;
+  color: var(--muted);
+}
+
+.note-link a,
+.list-item a {
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.18em;
+}
+
+.copy p,
+.contact-copy {
+  margin-top: 0;
+}
+
+.projects-list {
+  display: grid;
+  border-top: 1px solid var(--line);
+}
+
+.project-item {
+  padding: 1.5rem 0;
+  border-bottom: 1px solid var(--line);
+}
+
+.project-head {
+  display: grid;
+  gap: 0.45rem;
+  margin-bottom: 0.9rem;
+}
+
+.project-date {
+  margin: 0;
+  font-size: 0.84rem;
+  color: var(--muted);
+}
+
+.project-item h3 {
+  font-size: 1.02rem;
+  line-height: 1.5;
+  max-width: 52rem;
+}
+
+.project-copy,
+.project-stack {
+  margin: 0;
+  max-width: 52rem;
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
+.project-stack {
+  margin-top: 0.9rem;
+  color: var(--text);
+  font-size: 0.92rem;
+}
+
+.simple-list {
+  display: grid;
+  border-top: 1px solid var(--line);
+}
+
+.list-item {
+  display: grid;
+  grid-template-columns: minmax(150px, 220px) minmax(0, 1fr);
+  gap: 1rem;
+  padding: 1rem 0;
+  border-bottom: 1px solid var(--line);
+}
+
+.list-item p {
+  margin: 0;
+}
+
+.contact h2 {
+  margin-bottom: 1rem;
+}
+
+.site-footer {
+  padding-top: 1.2rem;
+  padding-bottom: 2rem;
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+@media (max-width: 780px) {
+  .site-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .site-nav,
+  .actions {
+    gap: 0.75rem;
+  }
+
+  .hero-layout,
+  .section-grid,
+  .list-item {
+    grid-template-columns: 1fr;
+  }
+
+  .hero,
+  .section {
+    padding-top: 2.25rem;
+    padding-bottom: 2.25rem;
+  }
+
+  h1 {
+    font-size: clamp(1.8rem, 8vw, 2.35rem);
+  }
+}
